@@ -1,3 +1,48 @@
 *{
   box-sizing: border-box;
 }
+
+.example-1{
+  width: 100px;
+  height: 100px;
+
+  animation-name: background-change;/* none */
+  animation-duration: 4s;/* 0 */
+  animation-delay: 4s;/* 0 */
+  animation-fill-mode: both;/*none*/
+  animation-iteration-count: infinite;/* 1 */
+  animation-direction: alternate; /* normal */
+  animation-timing-function: linear;/* ease-in */
+
+}
+
+.example-1:hover{
+  animation-play-state: paused;/* running */
+}
+@keyframes background-change{
+
+0%{
+background-color: yellow;
+border: 0;
+}
+25%{
+  background-color: crimson;
+  border: 50px solid cornflowerblue;
+}
+
+50%{
+  background-color:aqua;
+  border: 5px solid yellowgreen;
+}
+
+75%{
+  background-color: darksalmon;
+  border: 50px solid blue;
+}
+
+100%{
+  background-color: blueviolet;
+  border: 50px solid red;
+}
+
+}
